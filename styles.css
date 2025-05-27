@@ -3,7 +3,7 @@
     --text-color: #1a1c20;
     --link-color: #ffffff;
     --background-color: #eeeff1;
-    font-size: 18px; /* Set the base font size */
+    font-size: 17px; /* Set the base font size */
 }
 
 * {
@@ -17,20 +17,8 @@ html {
     scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
 }
 
-@font-face {
-    font-family: "Steph";
-    src: url("fonts/steph-font.ttf");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Steph";
-    src: url("fonts/steph-font-bold.ttf");
-    font-weight: bold;
-}
-
 body {
-    font-family: 'Steph', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -299,15 +287,19 @@ section h2::after {
 }
 
 .project-box {
-    flex: 0 0 16rem; /* Fixed width for the boxes */
+    flex: 0 0 16rem;
     text-align: center;
     border: 1px solid #d7dbd8;
     border-radius: 0.5rem;
     padding: 1rem;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling */
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ensure consistent height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
 .project-box:hover {
     transform: scale(0.95); /* Grow the box slightly on hover */
@@ -334,9 +326,14 @@ section h2::after {
 }
 
 .project-box p {
-    font-size: 1rem;
+    font-size: 0.65rem;
     font-weight: 300;
     color: #494a4a;
+    max-height: 4.5rem; /* limit height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    display: -webkit-box;
 }
 
 /* Skills Section */
