@@ -3,7 +3,7 @@
     --text-color: #1a1c20;
     --link-color: #ffffff;
     --background-color: #eeeff1;
-    font-size: 17px; /* Set the base font size */
+    font-size: 18px; /* Set the base font size */
 }
 
 * {
@@ -73,13 +73,14 @@ nav .right a:hover {
 
 /* General Section Styles */
 section {
-    padding: 8rem 2rem;
-    min-height: 80vh; /* Reduce the default minimum height */
+    padding: 6rem 2rem;
+    /* min-height: 80vh; Reduce the default minimum height */
+    min-height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 2rem;
+    gap: 1.5rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
@@ -165,28 +166,51 @@ section h2::after {
     font-weight: 300;
 }
 
-#about-section .social-links {
-    font-size: 2.25rem;
-}
+/* Education Box in About Section */
+.education-box {
+    background-color: #f0f4f1;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-top: 2rem;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .education-box h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1a1c20;
+  }
+  
+  .education-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
 
-#about-section .social-links a {
-    padding: 0;
-    margin: 0 0.75rem;
-}
-
-#about-section .social-links a i {
-    transition: transform 0.3s, color 0.3s;
-}
-
-#about-section .social-links a:hover i {
-    color: #a5d6b0;
-    transform: scale(1.2);
-}
-
-#about-section .social-links i {
-    color: #588061;
-    font-weight: 500;
-}
+.resume-button {
+    margin-top: 2rem;
+  }
+  
+  .resume-button a {
+    background-color: #bfd6c4;
+    color: #1a1c20;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .resume-button a:hover {
+    background-color: #a5d6b0;
+    transform: translateY(-2px);
+  }
+  
 
 /* Experience Section */
 #experience-section {
@@ -332,10 +356,18 @@ section h2::after {
 }
 
 #skills-section .skills-container {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem; /* Add gap between icons */
+    gap: 2rem; Add gap between icons */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1000px;
+    width: 100%;
 }
 
 #skills-section i {
@@ -350,29 +382,155 @@ section h2::after {
     color: #a5d6b0;
 }
 
-/* Leave a Message Section */
-#leave-message-section {
-    min-height: 50vh; /* Make it half the viewport height */
+/* Experience Section */
+#experience-section {
+    padding: 8rem 2rem;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    gap: 1rem;
-}
-
-#leave-message-section h2 {
-    margin-bottom: 1rem;
-    font-size: 2.75rem;
+    gap: 2rem;
+    background-color: #ffffff;
+  }
+  
+  #experience-section h2 {
+    font-size: 3rem;
     font-weight: 700;
-}
-
-#leave-message-section p {
-    font-size: 1.25rem;
-    color: #555;
-    max-width: 600px;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  #experience-section h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #bfd6c4;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  /* Experience Cards */
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .experience-card {
+    background-color: #f9f9f9;
+    border: 1px solid #d7dbd8;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  
+  .experience-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-card .experience-date {
+    font-size: 1.05rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .experience-card ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #333;
     line-height: 1.6;
-}
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .experience-card {
+      padding: 1.5rem;
+    }
+  
+    .experience-card h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+/* Leave a Message Icons Section */
+#leave-message-section {
+    background-color: #f8f8f8;
+    padding: 6rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #leave-message-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  #leave-message-section h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #bfd6c4;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  #leave-message-section p {
+    font-size: 1.25rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  
+  .contact-icons {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+  
+  .contact-icons a i {
+    color: #588061;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-icons a:hover i {
+    color: #a5d6b0;
+    transform: scale(1.2);
+  }
+  
+  
 
 footer {
     background-color: #909090;

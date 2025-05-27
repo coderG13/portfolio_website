@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steph Ran Portfolio</title>
+    <title>Devianshi Goyal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +17,20 @@
     <header>
         <nav>
             <div class="left">
-                <a href="#about-section">Steph Ran</a>
+                <a href="#about-section">Devianshi Goyal</a>
             </div>
             <div class="right">
                 <a href="#about-section">About</a>
                 <!-- <a href="#experience-section">Experience</a> -->
                 <a href="#projects-section">Projects</a>
                 <a href="#skills-section">Skills</a>
+                <a href="#experience-section">Experience</a>
                 <a href="#leave-message-section">Leave a Message!</a>
             </div>
         </nav>
     </header>
     <section id="about-section">
-        <h2>Hey World, I'm Steph!</h2>
+        <h2>Hey World, I'm Devianshi!</h2>
         <div class="headshot">
             <picture>
                 <source srcset="images/webp/headshot.webp" type="image/webp">
@@ -38,199 +39,186 @@
         </div>
         <div class="bio">
             <p>
-                Hey! I'm Steph, a recent UChicago graduate who's incredibly excited about software development and UX design.
-                with a background in computer science and biology, I'm well equipped with a technical skillset and an eagerness
-                to experiment!
+                As a Computer Science student with a passion for software development, I thrive on solving real-world problems through logical thinking and creative design. I enjoy working with systems—understanding how they operate, optimizing their performance, and building tools that make life easier for others.
             </p>
-            <br>
-            <p>
-                Outside of career and academics, I enjoy playing volleyball, making videos, watching anime, and lifting weights!
-            </p>
+                <p>
+                Outside of the tech world, I find joy in making dance videos, discovering new movies, and travelling. I believe that balance fuels creativity—and I bring that spirit into everything I do.
+                </p>
         </div>
-        <div class="social-links">
-            <a href="https://www.instagram.com/stephranaway/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/@stephranaway" target="_blank">
-                <i class="fa-brands fa-square-youtube"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/stephanieran/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/stephanieran" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
+        <div class="education-box">
+            <h3>Education</h3>
+            <p><strong>Arizona State University, Tempe, AZ</strong><br>
+            Bachelor of Computer Science | Minor in Mathematics<br>
+            <em>Dean’s List Recognition (2022–2024)</em><br>
+            GPA: 3.70 | Expected Graduation: May 2026</p>
+            <p><strong>Relevant Coursework:</strong><br>
+            Data Structures & Algorithms, Intro to Software Engineering, Information Assurance, Calculus, Discrete Math, Operating Systems, Principles of Programming Lang, Distributed Software Developmt</p>
+          </div>
+          
+            <div class="resume-button">
+                <a href="assets/resumeGoyal.pdf" download target="_blank">Download Resume</a>
+              </div>              
         </div>
     </section>
     <div class="divider"></div>
+
     <section id="projects-section">
-        <h2>Projects</h2>
-    
-        <!-- Software Projects Subsection -->
-        <div class="project-subsection">
-            <h3>Software</h3>
-            <div #swiperRef="" class="swiper card-swiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="https://github.com/stephanieran/floppy-fish" target="_blank" class="project-box">
-                        <picture>
-                            <source srcset="images/webp/floppy-fish.webp" type="image/webp">
-                            <img src="images/floppy-fish.png" alt="Floppy Fish">
-                        </picture>
-                        <h4>Floppy Fish</h4>
-                        <h5><em>Java</em></h5>
-                        <p>Floppy Fish is a spinoff of Flappy Bird built in Java. Instead of gravity pulling the bird down, the buoyancy of the water pushes the fish up.</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://github.com/stephanieran/circles" target="_blank" class="project-box">
-                        <picture>
-                            <source srcset="images/webp/circles-1.webp" type="image/webp">
-                            <img src="images/circles-1.png" alt="Circles">
-                        </picture>
-                        <h4>Circles</h4>
-                        <h5><em>Swift, Firebase</em></h5>
-                        <p>Circles is a photo sharing app with daily prompts to encourage small groups of families and friends to stay in touch.</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://github.com/stephanieran/github-issues" target="_blank" class="project-box">
-                        <picture>
-                            <source srcset="images/webp/github issues.webp" type="image/webp">
-                            <img src="images/github issues.png" alt="Github Issues">
-                        </picture>
-                        <h4>Github Issues</h4>
-                        <h5><em>Swift, GitHub REST API</em></h5>
-                        <p>Github Issues is an iOS mobile application to streamline open/closed GitHub Issues posted in popular open-source repos for simple access.</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://github.com/stephanieran/chibi-luffy" target="_blank" class="project-box">
-                        <picture>
-                            <source srcset="images/webp/chibi-luffy.webp" type="image/webp">
-                            <img src="images/chibi-luffy.png" alt="Chibi Luffy">
-                        </picture>
-                        <h4>Chibi Luffy</h4>
-                        <h5><em>Swift, GitHub REST API</em></h5>
-                        <p>Chibi Luffy is an Instagram bot that reposts anime memes scraped from Reddit.</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://github.com/stephanieran/functional-adventure" target="_blank" class="project-box">
-                        <picture>
-                            <source srcset="images/webp/haskell-text-game.webp" type="image/webp">
-                            <img src="images/haskell-text-game.png" alt="Functional Adventure">
-                        </picture>
-                        <h4>Functional Adventure</h4>
-                        <h5><em>Haskell</em></h5>
-                        <p>Functional adventure is a text-based adventure game with the goal of traversing the map to find a specific item.</p>
-                    </a>
-                </div>
-                </div>
-            </div>
+    <h2>Projects</h2>
+    <div class="project-subsection">
+      <div class="swiper card-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="https://github.com/coderG13/Weather_App.git" target="_blank" class="project-box">
+              <img src="images/devi images/" alt="Weather App">
+              <h4>Weather App</h4>
+              <h5><em>HTML, CSS, JavaScript</em></h5>
+              <p>Responsive weather app with real-time data and 4-day forecasts using OpenWeatherMap API and glassmorphism UI.</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://github.com/sshuq1/fsegroup9spyn" target="_blank" class="project-box">
+              <img src="images/project_spyn.jpg" alt="Project SPYN">
+              <h4>Project SPYN</h4>
+              <h5><em>MATLAB, LEGO EV3</em></h5>
+              <p>Autonomous vehicle prototype designed to assist individuals with mobility challenges through maze navigation.</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://github.com/coderG13/CSE360_Help" target="_blank" class="project-box">
+              <img src="images/project_compass360.jpg" alt="Project Compass360">
+              <h4>Compass360</h4>
+              <h5><em>Java, JavaFX, MySQL</em></h5>
+              <p>Course help system featuring student login, article resources, and secure course progress tracking.</p>
+            </a>
+          </div>
         </div>
-    
-        <!-- Design Projects Subsection -->
-        <div class="project-subsection">
-            <h3>Design</h3>
-                <div #swiperRef="" class="swiper card-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="https://hibinolab.com/" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/tissue-patch-1.webp" type="image/webp">
-                                    <img src="images/tissue-patch-1.png" alt="Tissue Patch">
-                                </picture>
-                                <h4>3D Bioprinted Mold</h4>
-                                <h5><em>OnShape, Lumen X Bioprinter</em></h5>
-                                <p>Designed a mold for research lap to reduce cell usage while maintaining tissue patch functionality.</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.figma.com/file/LbgAdL6kVLjecPz1XYQLRs/12weekyear?type=design&node-id=0-1&mode=design&t=NSBiFfataJC4wMu8-0\" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/twelve-week-year.webp" type="image/webp">
-                                    <img src="images/twelve-week-year.png" alt="12 Week Year">
-                                </picture>
-                                <h4>12 Week Year</h4>
-                                <h5><em>Figma</em></h5>
-                                <p>I created a prototype for a mobile self improvement application based on principles from the book <em>12 week year</em>.</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.figma.com/design/dgGOVpe334IiQeQ48oHi7n/Course-Registration?node-id=0-1&p=f&t=1DJRWMw4xOXlk2TY-0" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/mpcs-redesign.webp" type="image/webp">
-                                    <img src="images/mpcs-redesign.png" alt="MPCS Redesign">
-                                </picture>
-                                <h4>MPCS Redesign</h4>
-                                <h5><em>Figma</em></h5>
-                                <p>I redesigned the website to make it simpler and more enjoyable to use.</p>
-                            </a>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                            <a href="https://youtu.be/9gVfe0mJjMQ" target=_blank class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/wasted-ocean-1.webp" type="image/webp">
-                                    <img src="images/wasted-ocean-1.png" alt="Wasted Ocean Mural">
-                                </picture>
-                                <h4>Wasted Ocean</h4>
-                                <h5><em>Final Cut Pro X</em></h5>
-                                <p>I spearheaded the installation of <em>Wasted Ocean</em>, a mural of ocean life made entirely from student waste.</p>
-                            </a>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                            <a href="https://www.figma.com/design/ldmrdlXEzcKOQCGWQD9hzG/Assignment-5---Native-App-with-Retention?node-id=0-1&p=f&t=SH0RlarLtnl9onec-0" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/job-seaerch-design.webp" type="image/webp">
-                                    <img src="images/job-seaerch-design.png" alt="Job Search App">
-                                </picture>
-                                <h4>Job Search App</h4>
-                                <h5><em>Figma</em></h5>
-                                <p>I designed a simple native job search iOS app targeted towards new grads.</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.figma.com/design/ugfzGq3DAgZKZX5YzDI2vE/RecipeWebsite?node-id=0-1&p=f&t=aRh6L1fb70qqi10w-0" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/lunisolar.webp" type="image/webp">
-                                    <img src="images/lunisolar.png" alt="Lunisolar">
-                                </picture>
-                                <h4>Lunisolar</h4>
-                                <h5><em>Figma</em></h5>
-                                <p>I designed a simple recipe website page inspired by the Lunar New Year.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>    
+      </div>
+    </div>
+  </section>
     <div class="divider"></div>
+        </div>
+    </section>
     <section id="skills-section">
         <h2>Skills</h2>
         <div class="skills-container">
+          <div class="skill-item">
             <i class="fa-brands fa-python"></i>
+            <p>Python</p>
+          </div>
+          <div class="skill-item">
             <i class="fa-brands fa-java"></i>
-            <i class="fa-brands fa-swift"></i>
-            <i class="fa-brands fa-figma"></i>
-            <i class="fa-brands fa-git-alt"></i>
+            <p>Java</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill-item">
             <i class="fa-brands fa-github-alt"></i>
-            <i class="fa-solid fa-database"></i>
-            <i class="devicon-r-plain"></i>
+            <p>GitHub</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-cplusplus-plain"></i>
+            <p>C++</p>
+          </div>
+          <div class="skill-item">
             <i class="devicon-c-plain-wordmark"></i>
+            <p>C</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-matlab-plain"></i>
+            <p>MATLAB</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-linux-plain"></i>
+            <p>Linux</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-nodejs-plain"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-terminal"></i>
+            <p>Bash</p>
+          </div>
         </div>
-    </section>
-    <div class="divider"></div>
-    <section id="leave-message-section">
-        <h2>Leave a Message!</h2>
-        <p>coming soon :)</p>
-    </section>
+      </section>
+      
+      <div class="divider"></div>
+
+      <section id="experience-section">
+        <h2>Experience</h2>
+        <div class="experience-container">
+      
+          <div class="experience-card">
+            <h3>Technology Consultant, ASU LX Space Success</h3>
+            <p class="experience-date"><em>July 2024 – Present</em></p>
+            <ul>
+              <li>Provided IT support and training across 30+ classrooms, maintaining 99% system uptime.</li>
+              <li>Trained faculty/students on ASU tech tools and upgraded learning studio equipment.</li>
+            </ul>
+          </div>
+      
+          <div class="experience-card">
+            <h3>Cloud Intern, Verizon Cloud Platform (Forage)</h3>
+            <p class="experience-date"><em>Nov 2023</em></p>
+            <ul>
+              <li>Developed a hypothetical VPN product, wrote Python scripts for testing, and researched cloud security practices.</li>
+            </ul>
+          </div>
+      
+          <div class="experience-card">
+            <h3>Management Intern, Krishna Steel Udyog, India</h3>
+            <p class="experience-date"><em>Oct 2021 – Jul 2022</em></p>
+            <ul>
+              <li>Processed 100+ transactions and managed 200+ documents monthly with 98% accuracy.</li>
+            </ul>
+          </div>
+      
+        </div>
+      </section>
+
+    <!-- <section id="leave-message-section">
+        <h2>Leave a message!</h2>
+        <p>
+          I'm always excited to connect over new opportunities, projects, or just chat about technology and ideas!
+        </p>
+        <div class="contact-buttons">
+          <a href="mailto:devianshig22@gmail.com" class="contact-btn">Email Me</a>
+          <a href="https://www.linkedin.com/in/devianshig/" target="_blank" class="contact-btn">LinkedIn</a>
+        </div>
+      </section> -->
+
+      <section id="leave-message-section">
+        <h2>Leave a message!</h2>
+        <p>I'm always excited to connect over new opportunities, projects, or just chat about technology and ideas!</p>
+        
+        <div class="contact-icons">
+          <a href="https://www.linkedin.com/in/devianshig/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://github.com/coderG13" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-2x"></i>
+          </a>
+          <a href="mailto:devianshig22@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+          </a>
+        </div>
+      </section>
+      
+      
 
     <!-- Swiper JS -->
     <footer>
-        <p>&copy; <span id="year"></span> Steph Ran. All Rights Reserved.</p>
+        <p>&copy; <span id="year"></span> Devianshi Goyal. All Rights Reserved.</p>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
