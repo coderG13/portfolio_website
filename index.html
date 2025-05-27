@@ -12,6 +12,8 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- cursor -->
+     <div id="cursor-trail"></div>
 </head>
 <body>
     <header>
@@ -237,5 +239,29 @@
             });
         });
     </script>
+
+  <!-- cursor trail animation effect -->
+  <!-- <div id="cursor-trail"></div> -->
+  <script>
+  const trailContainer = document.getElementById("cursor-trail");
+
+  document.addEventListener("mousemove", (e) => {
+    const star = document.createElement("div");
+    star.classList.add("cursor-star");
+    star.textContent = "★"; // Unicode black star
+
+    star.style.left = `${e.clientX}px`;
+    star.style.top = `${e.clientY}px`;
+
+    trailContainer.appendChild(star);
+
+    setTimeout(() => {
+      star.remove();
+    }, 600); // same as animation duration
+  });
+</script>
+
+
+
   </body>
 </html>
